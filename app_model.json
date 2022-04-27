@@ -1,0 +1,10 @@
+[
+    {
+        "name":"app1",
+        "cpu_demand":1,
+        "mem_demand":2,
+        "net_demand":3,
+        "sla":4,
+        "exec_delay":5
+    }
+]
