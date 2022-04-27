@@ -1,8 +1,10 @@
 import constant
 import math
-class utils:
+
+
+class Utils:
 
     @classmethod
-    def get_trans_delay(cls,x1,y1,x2,y2):
-        distance=math.sqrt((x2-x1)**2+(y2-y1)**2)
-        return distance*constant.CO_DISTANCE_TO_DELAY
+    def get_trans_delay(cls, x1, y1, x2, y2):
+        distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+        return distance * constant.CO_DISTANCE_TO_DELAY

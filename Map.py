@@ -1,8 +1,13 @@
-class map:
+class Map:
 
-    def __init__(self, width, length):
-        self.width=width
-        self.length=length
+    width=0
+    length=0
 
-    def generate(self):
+    @classmethod
+    def set_size(cls,width,length):
+        cls.width=width
+        cls.length=length
 
+    @classmethod
+    def generate(cls):
+        
