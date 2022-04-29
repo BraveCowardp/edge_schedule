@@ -1,8 +1,9 @@
 from Application import Application
 from Application import Applications
+from Map import Map
+import json
+import constant
 from Utils import Utils
-
-global applications
 
 
 class Node:
@@ -52,6 +53,7 @@ class Node:
 class Nodes:
 
     dict={}
+    current_key=0
 
     @classmethod
     def get_num(cls):
@@ -68,3 +70,15 @@ class Nodes:
     @classmethod
     def del_node(cls,node:Node):
         del cls.dict[node.key]
+
+    @classmethod
+    def generate(cls,num,scale):
+        with open(constant.NODE_MODEL_FILE,'r') as f:
+            node_models=json.load(f)
+        proportion_list=[]
+        for model in node_models:
+            proportion_list.append(model['proportion'])
+        num_list=[]
+
+        for i in range(num):
+

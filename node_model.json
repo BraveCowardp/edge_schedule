@@ -1,0 +1,14 @@
+[
+    {
+        "proportion":0.8,
+        "cpu":100,
+        "mem":100,
+        "net":100
+    },
+    {
+        "proportion":0.2,
+        "cpu":150,
+        "mem":90,
+        "net":70
+    }
+]
